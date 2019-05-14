@@ -44,11 +44,10 @@ end
 p can_join_two_strings("Mary had a little lamb, ", "its fleece was white as snow")
 
 def can_add_numbers_when_given_strings(num1, num2)
-  return = num1.to_i + num2.to_i
-  return
+  return num1.to_i + num2.to_i
 end
 
-p can_add_numbers_when_given_strings(1,2)
+p can_add_numbers_when_given_strings(1, 2)
 
 def number_to_full_name__month(number)
   case number
@@ -95,3 +94,10 @@ def volume_of_cube(side)
 end
 
 p volume_of_cube(2)
+
+# #Given the radius of a sphere calculate the volume
+def volume_of_sphere(radius)
+return ((4 * 3.14 * (radius ** 3)/3)).to_i
+end
+
+p volume_of_sphere(2)
