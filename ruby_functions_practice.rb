@@ -37,13 +37,15 @@ end
 p length_of_string('A string of length 21')
 
 def can_join_two_strings(string_1, string_2)
-return "#{string_1}#{string_2}"
+ joined_string = string_1 + string_2
+ return joined_string
 end
 
 p can_join_two_strings("Mary had a little lamb, ", "its fleece was white as snow")
 
 def can_add_numbers_when_given_strings(num1, num2)
-  return num1.to_i + num2.to_i
+  return = num1.to_i + num2.to_i
+  return
 end
 
 p can_add_numbers_when_given_strings(1,2)
@@ -73,7 +75,6 @@ def number_to_full_name__month(number)
   case number
   when 1
     return "Jan"
-
   when 4
     return "Apr"
   when 9
@@ -87,3 +88,10 @@ p number_to_full_name__month(1)
 p number_to_full_name__month(4)
 p number_to_full_name__month(9)
 p number_to_full_name__month(10)
+
+
+def volume_of_cube(side)
+  return (side**3)
+end
+
+p volume_of_cube(2)
