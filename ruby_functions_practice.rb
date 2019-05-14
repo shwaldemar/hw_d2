@@ -37,21 +37,19 @@ end
 p length_of_string('A string of length 21')
 
 def can_join_two_strings(string_1, string_2)
-string_1 = "Mary had a little lamb, "
-string_2 = "its fleece was white as snow"
 return "#{string_1}#{string_2}"
 end
 
-p can_join_two_strings()
+p can_join_two_strings("Mary had a little lamb, ", "its fleece was white as snow")
 
-def can_add_numbers_when_given_strings()
-  return "1".to_i + "2".to_i
+def can_add_numbers_when_given_strings(num1, num2)
+  return num1.to_i + num2.to_i
 end
 
-p can_add_numbers_when_given_strings()
+p can_add_numbers_when_given_strings(1,2)
 
-def number_to_full_name__month_1()
-  case month
+def number_to_full_name__month(number)
+  case number
   when 1
     return "January"
   when 3
@@ -62,17 +60,30 @@ def number_to_full_name__month_1()
     return "September"
   when 10
     return "October"
-  else
-    return
   end
 end
 
-def test_number_to_full_name__month_1()
-  result = number_to_full_month_name( 1 )
-  assert_equal( "January", result )
+p number_to_full_name__month(1)
+p number_to_full_name__month(3)
+p number_to_full_name__month(4)
+p number_to_full_name__month(9)
+p number_to_full_name__month(10)
+
+def number_to_full_name__month(number)
+  case number
+  when 1
+    return "Jan"
+
+  when 4
+    return "Apr"
+  when 9
+    return "Sep"
+  when 10
+    return "Oct"
+  end
 end
 
-def test_number_to_full_name__month_3()
-  result = number_to_full_month_name( 3 )
-  assert_equal( "March", result )
-end
+p number_to_full_name__month(1)
+p number_to_full_name__month(4)
+p number_to_full_name__month(9)
+p number_to_full_name__month(10)
